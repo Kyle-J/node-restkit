@@ -26,6 +26,10 @@ var Restkit  = require('restkit');
 
 Restkit = new Restkit();
 
+// Add a new custom route
+Restkit.addRoute('POST /hello', function(request, response) { response.send('Hello world') })
+
+// Start the server
 Restkit.start();
 
 ```
