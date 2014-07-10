@@ -18,6 +18,7 @@ Thursday 10th July
 *0.0.0 - 0.0.1*
 
 - Initial version - Automatic routing, basic error responses, basic schema
+- Added custom routes utility function
 
 ## Example Usage
 
@@ -27,7 +28,7 @@ var Restkit  = require('restkit');
 Restkit = new Restkit();
 
 // Add a new custom route
-Restkit.addRoute('POST /hello', function(request, response) { response.send('Hello world') })
+Restkit.addRoute('GET /hello', function(request, response) { response.send({'message' : 'Hello world'}) })
 
 // Start the server
 Restkit.start();
@@ -36,11 +37,11 @@ Restkit.start();
 
 ## Todo
 
-- Create custom route register
 - Add self-defining model builder
 - Add HMATEOAS Elements to response
 - Add "envelope" parameter
 - Add "head" options
+- Add default getResource (GET)
 - Add default createResource (POST)
 - Add default updateResource (PUT)
 - Add default deleteResource (DELETE)
