@@ -5,11 +5,11 @@ Built on-top of Restify + Sequaliz to add database layer and best-practise schem
 
 Schema based on research and recommendations for best practise REST API implementation.
 
-http://www.youtube.com/watch?v=hdSrT4yjS1g
-http://www.youtube.com/watch?v=ITmcAGvfcJI
-http://www.youtube.com/watch?v=HW9wWZHWhnI
-http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
-
+- http://www.youtube.com/watch?v=hdSrT4yjS1g
+- http://www.youtube.com/watch?v=ITmcAGvfcJI
+- http://www.youtube.com/watch?v=HW9wWZHWhnI
+- http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+- http://www.restapitutorial.com/
 
 ## Changelog
 
@@ -30,6 +30,8 @@ Thursday 10th July
 - Add default updateResource (PUT)
 - Add default deleteResource (DELETE)
 - Add vendor headers
+- Move Model definitions and database config into parent project
+- Add Database layer for Mongo
 
 
 ## License
