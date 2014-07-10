@@ -19,6 +19,17 @@ Thursday 10th July
 
 - Initial version - Automatic routing, basic error responses, basic schema
 
+## Example Usage
+
+```
+var Restkit  = require('restkit');
+
+Restkit = new Restkit();
+
+Restkit.start();
+
+```
+
 ## Todo
 
 - Create custom route register
