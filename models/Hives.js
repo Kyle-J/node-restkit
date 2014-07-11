@@ -17,6 +17,12 @@ module.exports = {
     },
     options : {
 
+        state : {
+
+            order : 'ASC',
+            sort  : 'Title'
+
+        }
     }
 
 }
